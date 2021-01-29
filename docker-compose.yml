@@ -2,11 +2,15 @@ version: '3.3'
 services:
    db:
       image: postgres:12-alpine
+      container_name: db
       environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=postgres
       ports:
       - 5437:5432
+      volumes:
+        - ./load_scripts:/docker-entrypoint-initdb.d/
+        - ./pagila:/pagila
       expose:
       - 5432
