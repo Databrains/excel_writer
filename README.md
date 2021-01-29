@@ -76,4 +76,14 @@ morganek@TPX1Y3 ~/excel_writer
 morganek@TPX1Y3 ~/excel_writer
  % 
 ```
+Stop docker-compose:
+```
+morganek@TPX1Y3 ~/excel_writer
+ % docker-compose down 
+Stopping db ... done
+Removing db ... done
+Removing network excelwriter_default
+morganek@TPX1Y3 ~/excel_writer
+ % 
+```
 
